@@ -57,9 +57,6 @@ namespace Business.Concrete
             return new SuccessDataResult<Product>(_productDal.Get(p => p.ProductId == productId));
         }
 
-        public IDataResult<List<ProductDetailDto>> GetproductDetails()
-        {
-            return new SuccessDataResult<List<Product>>(_productDal.GetProductDetails());
-        }
+        
     }
 }
